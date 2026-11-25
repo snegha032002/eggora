@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Eggora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Satisfy&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Contact</div>
+    <h1>We'd Love to Hear From You</h1>
+    <p>Questions, feedback or bulk orders — send us a message and we'll reply quickly.</p>
+  </div>
+</section>
+<section style="padding-top:30px">
+  <div class="wrap contact-grid">
+    <div class="info-card reveal">
+      <h2>Get in touch</h2>
+      <div class="info-row"><span class="ic">☎</span><div><small>Call or WhatsApp</small><span data-site="phone"></span></div></div>
+      <div class="info-row"><span class="ic">✉</span><div><small>Email</small><span data-site="email"></span></div></div>
+      <div class="info-row"><span class="ic">◷</span><div><small>Hours</small><span data-site="hours"></span></div></div>
+      <div class="info-row"><span class="ic">⌂</span><div><small>Address</small><span data-site="address"></span></div></div>
+    </div>
+    <div class="form-card reveal">
+      <h2>Send a message</h2>
+      <form class="form">
+        <div class="two"><label>Name<input required placeholder="Your name"></label><label>Phone<input type="tel" placeholder="Mobile number"></label></div>
+        <label>Email<input type="email" required placeholder="you@example.com"></label>
+        <label>Topic<select><option>Order / delivery question</option><option>Bulk / wholesale order</option><option>Feedback</option><option>Other</option></select></label>
+        <label>Message<textarea required placeholder="How can we help?"></textarea></label>
+        <button class="btn btn-green" style="justify-content:center">Send Message <span class="arrow"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span></button>
+        <div class="ok">✓ Message sent! We'll reply within a few hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="js/main.js"></script>
+<script>document.querySelectorAll("[data-site]").forEach(el => el.textContent = SITE[el.dataset.site]);</script>
+</body>
+</html>

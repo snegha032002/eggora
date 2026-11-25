@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Eggs — Eggora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Satisfy&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Shop</div>
+    <h1>Shop Fresh Eggs</h1>
+    <p>Pick a pack size, choose your favourites, and we'll deliver them fresh tomorrow morning.</p>
+  </div>
+</section>
+<section style="padding-top:30px">
+  <div class="wrap">
+    <div class="filters">
+      <button class="chip active" data-cat="all">All Eggs</button>
+      <button class="chip" data-cat="packs">Packs (6 / 12 / 30)</button>
+      <button class="chip" data-cat="loose">Loose</button>
+      <button class="chip" data-cat="special">Specialty</button>
+    </div>
+    <div class="filters" style="margin-top:-14px">
+      <label class="search shop-search" style="width:min(420px,100%)"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="6"/><path d="M12.5 12.5L17 17"/></svg><input id="shopSearch" placeholder="Search eggs, e.g. brown, omega…" aria-label="Search products"></label>
+    </div>
+    <div class="products" id="shopGrid"></div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="bulk-band reveal">
+      <div><span class="eyebrow">Bulk Orders</span><h2>Need trays every week?</h2><p>Restaurants, bakeries, hotels and housing societies get wholesale pricing and scheduled delivery.</p></div>
+      <div><a href="about.html#bulk" class="btn btn-yellow">Get a Bulk Quote →</a></div>
+    </div>
+  </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
